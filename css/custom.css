@@ -1,11 +1,17 @@
 body {
   min-height: 100vh;
-  position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: relative;
+}
+
+main {
+  flex-grow: 1;
 }
