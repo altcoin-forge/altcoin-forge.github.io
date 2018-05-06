@@ -38,14 +38,14 @@
         </a>
         <div>
           <!-- <a class="btn" href="/guide">Guide</a> -->
-          <a class="btn" href="/about">About</a>
-          <a class="btn" href="/contact">Contact Us</a>
+          <a class="btn" href="#About">About</a>
+          <a class="btn" href="#Contact">Contact Us</a>
         </div>
       </div>
     </nav>
 
     <!-- Masthead -->
-    <main class='bg-light'>
+    <main>
       <header class="masthead text-white text-center">
         <div class="overlay" style="background-attachment: fixed;"></div>
         <div class="container">
@@ -60,7 +60,7 @@
                     <input type="email" id='home-email' class="form-control form-control-lg" placeholder="Enter your email...">
                   </div>
                   <div class="col-12 col-md-3">
-                    <button type="submit" id='home-contact' class="btn btn-block btn-lg btn-primary">Contact Us</button>
+                    <button type="submit" href='#Contact' id='home-contact' class="btn btn-block btn-lg btn-primary">Contact Us</button>
                   </div>
                 </div>
               </form>
@@ -103,7 +103,56 @@
           </div>
         </div>
       </section>
+
+      <!-- About -->
+      <section id='About'>
+        <div class="container mt-5 mb-5">
+          <h3 class='mb-3 text-primary'>About Us</h3>
+          <div class='row'>
+            <div class='col-sm'>
+              <h5>What We Do</h5>
+              <p class='mb-4'>Altcoin Forge is a service that helps conceive your vision for the future of cryptocurrency. We do that by creating new currencies as well as adding new features to your or your communities current currency to keep you competitive in the ever growing world of crypto.</p>
+            </div>
+            <div class='col-sm'>
+              <h5>Why Us</h5>
+              <p class='mb-4'>There is no other team more suited for the task. We believe in crypto and know the power it has to change the world.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class='container'><hr></div>
+      <!-- Form -->
+      <section id='Contact'>
+        <div class="container mt-5 mb-5">
+          <h3 class='text-primary'>Contact Us</h3>
+          <p>Please include as much information as you can provide.</p>
+          <form class='mt-4' action='https://formspree.io/hello@altcoinforge.com' method='POST'>
+            <div class="form-group">
+              <label for="email">Your Email address<span style='color:red'>*</span></label>
+              <input id='contactEmail' type="email" class="form-control" name="email" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="coin">Coin Forked From</label>
+              <input type="text" class="form-control" name="coin" placeholder="bitcoin">
+            </div>
+            <div class="form-group">
+              <label for="altcoinname">Your Altcoin Name</label>
+              <input type="text" class="form-control" name="altcoinname" placeholder="altcoin">
+            </div>
+            <div class="form-group">
+              <label for="todo">What Needs to Be Done</label>
+              <textarea type="text" class="form-control" name="todo" rows="2" placeholder="I need a coin completely from scratch."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="describe">Describe Your Altcoin</label>
+              <textarea class="form-control" name="describe" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </section>
     </main>
+
     <!-- Footer -->
     <footer class="footer bg-light">
       <div class="container">
@@ -111,15 +160,15 @@
           <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
             <ul class="list-inline mb-2">
               <!-- <li class="list-inline-item">
-                <a href="/about">Guide</a>
+                <a href="#About">Guide</a>
               </li> -->
               <!-- <li class="list-inline-item">&sdot;</li> -->
               <li class="list-inline-item">
-                <a href="/about">About</a>
+                <a href="#About">About</a>
               </li>
               <li class="list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a href="/contact">Contact</a>
+                <a href="#Contact">Contact</a>
               </li>
             </ul>
             <p class="text-muted small mb-4 mb-lg-0">&copy; AltcoinForge 2018. All Rights Reserved.</p>
@@ -127,7 +176,7 @@
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
-                <a href="/contact">
+                <a href="#Contact">
                   <i class="fas fa-envelope fa-2x fa-fw"></i>
                 </a>
               </li>
