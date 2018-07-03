@@ -33,3 +33,8 @@ $(function(){
     } // End if
   });
 });
+
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
